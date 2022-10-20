@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Списки</title>
+    <style>
+        ul li {
+        /*list-style-image: url("icon.ico");*/
+        font-family: Century Gothic;
+        font-size: 24px;
+        padding-left:25px;
+        list-style-type: none/*square*/;
+        background: url("icon.ico") no-repeat top 6px left/22px 22px;
+        }
+        ol li {
+        font-family: Century Gothic;
+        font-size: 28px;
+        list-style-type: none;
+        position: absolute;
+        padding-left: 20px;
+        /*list-style-type:upper-roman;*/
+       
+        }
+        ol li::before {
+        content:'\2615';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 0px;
+        top: 0px;
+       
+        }
+        </style>
+</head>
+<body>
+    <ul>
+        <li>зачем</li>
+        <li>почему</li>
+        <li>как</li>
+    </ul>
+    <ol>
+        <li /*value="3"*/>три</li>
+        <li>четыре</li>
+        <li>пять</li>
+    </ol>
+</body>
+</html>
