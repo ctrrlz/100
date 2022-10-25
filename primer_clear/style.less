@@ -1,0 +1,317 @@
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*******************/
+/*Стилизуем HEADER:*/
+/*******************/
+.header {
+    background-color: rgb(43, 41, 41);
+    color: white;    
+    padding: 1vw 2vw;
+}
+/*В HEADER стилизуем навигацию:*/
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;    
+}
+.navigation-link {
+    padding: 2vmin;
+}
+.navigation-link:hover {
+    color: black;
+    background-color: gold;
+    cursor: pointer;
+    border-radius: .5vmin;
+}
+/*В HEADER стилизуем контент:*/
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+
+    padding: 1vw;
+    margin: 3vw 0;
+
+    /*Для тени:*/
+    position:relative;
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.1) inset;
+}
+/*Для тени:*/
+.header-content:before, .header-content:after
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 30px rgba(255,255,255,0.4);
+    top: 50%;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    border-radius:30%;
+}
+.header-content p {
+    width: 70%;
+    text-align: center;
+    font-size: calc(1.2rem + 1.2vmin);
+}
+.header-content div {
+    padding: 1vw;
+    background-color: gold;
+    color: white;
+}
+
+
+/*Стилизуем MAIN:*/
+.main {
+    background-color: white;
+    color: black;    
+    padding: 1vw 2vw;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+
+    padding: 1vw;
+
+    /*Для тени:*/
+    position:relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+
+}
+/*Для тени:*/
+.main-content:before, .main-content:after
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    top: 50%;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    border-radius:30%;
+}
+.main-content h2 {
+    font-size: calc(1.3rem + 1.3vmin);
+}
+.main-content p {
+    width: 70%;
+    text-align: center;
+    font-size: calc(.7rem + .7vmin);
+}
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3vw 0;
+}
+.main-container-image {
+    width: 5vw;
+    height: 5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-container-image:nth-child(1) {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/181/181540.png);
+}
+.main-container-image:nth-child(2) {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/181/181535.png);
+}
+.main-container-image:nth-child(3) {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/181/181514.png);
+}
+.main-container-image:nth-child(4) {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/181/181548.png);
+}
+
+/*Стилизуем SECTION1:*/
+.section1 {
+    background-color: rgb(43, 41, 41);
+    color: white;    
+    padding: 1vw 2vw;
+
+
+
+}
+.section1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+
+    padding: 1vw;
+
+    /*Для тени:*/
+    position:relative;
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.1) inset;
+
+}
+/*Для тени:*/
+.section1-content:before, .section1-content:after
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 30px rgba(255,255,255,0.4);
+    top: 50%;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    border-radius:30%;
+}
+.section1-content h2 {
+    font-size: calc(1.3rem + 1.3vmin);
+}
+.section1-content p {
+    width: 70%;
+    text-align: center;
+    font-size: calc(.7rem + .7vmin);
+}
+
+.section1-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1vw 0;
+}
+.section1-container-block {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1vw;
+
+    /*Для тени:*/
+    position:relative;
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.1) inset;
+}
+/*Для тени:*/
+.section1-container-block:before, .section1-container-block:after
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 30px rgba(255,255,255,0.4);
+    top: 50%;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    border-radius:30%;
+}
+
+.section1-container-block div {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.section1-container-block h3 {
+    text-align: center;
+    font-size: calc(1rem + 1vmin);
+}
+.section1-container-block p {
+    text-align: justify;
+    font-size: calc(.5rem + .5vmin);
+}
+
+
+/*Стилизуем SECTION2:*/
+.section2 {
+    background-color: white;
+    color: black;    
+    padding: 1vw 2vw;
+
+
+}
+.section2-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+
+    padding: 1vw;
+
+    /*Для тени:*/
+    position:relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1) inset;
+
+}
+/*Для тени:*/
+.section2-content:before, .section2-content:after
+{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    top: 50%;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    border-radius:30%;
+}
+.section1-content h2 {
+    font-size: calc(1.3rem + 1.3vmin);
+}
+.section2-content p {
+    width: 70%;
+    text-align: center;
+    font-size: calc(.7rem + .7vmin);
+}
+
+.section2-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1vw 0;
+}
+.section2-container-image {
+    width: 10vw;
+    height: 10vw;
+    margin: 1vw 5vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+.section2-container-image:nth-child(1) {
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg);
+}
+.section2-container-image:nth-child(2) {
+    background-image: url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg);
+}
+.section2-container-image:nth-child(3) {
+    background-image: url(https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg);
+}
+.section2-container-image:nth-child(4) {
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__340.jpg);
+}
+
+/*Стилизуем FOOTER:*/
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: .5vw 2vw;
+}
